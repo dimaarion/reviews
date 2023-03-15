@@ -23,3 +23,26 @@
   z-index: 2;
   width: 60%;
 }
+.margin-auto {
+  margin: auto;
+}
+.top-0 {
+  top: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.left-100 {
+  right: 0px;
+}
+.top-100 {
+  bottom: 0px;
+}
+.top-50 {
+  top: 0px;
+  bottom: 0px;
+}
+.left-50 {
+  left: 0px;
+  right: 0px;
+}

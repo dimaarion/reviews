@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Row, Col, Container } from "react-bootstrap";
 import ArrowLeft from "./components/ArrowLeft";
+import ArrowRight from "./components/ArrowRight";
 export default function App() {
   const [getText, setText] = useState({});
 
@@ -21,8 +22,11 @@ export default function App() {
             {getText.txt}
           </div>
           <div className="item item-right position-absolute">{getText.txt}</div>
-          <div className="btn">
+          <div className="btn position-absolute margin-auto">
             <ArrowLeft />
+          </div>
+          <div className="btn position-absolute margin-auto">
+            <ArrowRight />
           </div>
         </Col>
       </Container>
