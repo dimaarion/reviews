@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <Container fluid className="App text-center ">
-      <h2 className="my-3">Отзывы наших клиентов</h2>
+      <h2 className="my-3 position-relative z-2">Отзывы наших клиентов</h2>
       <Container>
         <Col className="position-relative">
           <div className="item item-left position-absolute">{getText.txt}</div>

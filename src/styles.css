@@ -4,7 +4,7 @@
 }
 .reviews {
   background-color: #00800094;
-  min-height: 250px;
+  min-height: 300px;
   position: relative;
   top: 100px;
   width: 100%;
@@ -12,7 +12,7 @@
 }
 .rview-bg {
   position: absolute;
-  background-color: green;
+  background-color: #008000d6;
   width: 100%;
   height: 350px;
   margin: auto;
