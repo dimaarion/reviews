@@ -1,6 +1,7 @@
-import "./styles.css";
+import "./bootstrap/bootstrap.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Row, Col } from "react-bootstrap";
 export default function App() {
   const [getImage, setImage] = useState([{}]);
 
@@ -11,13 +12,11 @@ export default function App() {
   return (
     <div className="App">
       <h2>Отзывы наших клиентов</h2>
-      <div className="row">
+      <Row>
         {getImage.map((image, i) => (
-          <div className="col" key={image.name + i}>
-            {image.name}
-          </div>
+          <Col key={image.name + i}>{image.name}</Col>
         ))}
-      </div>
+      </Row>
     </div>
   );
 }
