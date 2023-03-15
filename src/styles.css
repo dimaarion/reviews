@@ -25,6 +25,13 @@
 }
 .btn {
   top: 30px;
+  z-index: 3;
+}
+.btn-left {
+  left: 100px;
+}
+.btn-right {
+  right: 100px;
 }
 .margin-auto {
   margin: auto;
@@ -49,3 +56,6 @@
   left: 0px;
   right: 0px;
 }
+
+
+m
