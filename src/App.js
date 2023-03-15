@@ -13,7 +13,7 @@ export default function App() {
   }, [getText]);
 
   return (
-    <Container fluid className="App text-center">
+    <Container fluid className="App text-center ">
       <h2 className="my-3">Отзывы наших клиентов</h2>
       <Container>
         <Col className="position-relative">
@@ -30,6 +30,8 @@ export default function App() {
           </div>
         </Col>
       </Container>
+      <div className="rview-bg"></div>
+      <div className="reviews"></div>
     </Container>
   );
 }
