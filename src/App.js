@@ -17,21 +17,28 @@ export default function App() {
       <h2 className="my-3 position-relative z-2">Отзывы наших клиентов</h2>
       <Container>
         <Col className="position-relative">
-          <div className="item item-left position-absolute">{getText.txt}</div>
-          <div className="item item-center position-absolute  active">
+          <div className="item item-left position-absolute">
+            <h3 className="text-center">Дима</h3>
             {getText.txt}
           </div>
-          <div className="item item-right position-absolute">{getText.txt}</div>
-          <div className="btn btn-left position-absolute margin-auto">
-            <ArrowLeft />
+          <div className="item item-center position-absolute  active">
+            <h3 className="text-center">Дима</h3>
+            {getText.txt}
           </div>
-          <div className="btn btn-right position-absolute margin-auto">
-            <ArrowRight />
+          <div className="item item-right position-absolute">
+            <h3 className="text-center">Дима</h3>
+            {getText.txt}
           </div>
         </Col>
       </Container>
       <div className="rview-bg"></div>
       <div className="reviews"></div>
+      <div className="btn btn-left position-absolute margin-auto">
+        <ArrowLeft />
+      </div>
+      <div className="btn btn-right position-absolute margin-auto">
+        <ArrowRight />
+      </div>
     </Container>
   );
 }
