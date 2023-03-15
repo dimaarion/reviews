@@ -22,10 +22,10 @@ export default function App() {
             {getText.txt}
           </div>
           <div className="item item-right position-absolute">{getText.txt}</div>
-          <div className="btn position-absolute margin-auto">
+          <div className="btn position-absolute margin-auto left-0">
             <ArrowLeft />
           </div>
-          <div className="btn position-absolute margin-auto">
+          <div className="btn position-absolute margin-auto left-100">
             <ArrowRight />
           </div>
         </Col>
