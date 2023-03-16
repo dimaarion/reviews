@@ -3,15 +3,24 @@
   text-align: center;
 }
 .star {
-  width: 5%;
+  width: 20px;
+}
+.reviews-main {
+  width: 80%;
+  position: relative;
 }
 .reviews {
   background-color: rgba(1, 149, 65, 0.2);
   min-height: 400px;
   position: relative;
   top: 130px;
-  width: 100%;
+  width: 90%;
   margin: auto;
+}
+.raund {
+  column-count: 5;
+  column-width: 100px;
+  margin-bottom: 10px;
 }
 .rview-bg {
   position: absolute;
@@ -24,13 +33,18 @@
   z-index: 0;
 }
 .item {
-  columns: 3;
   top: 50px;
   width: 100%;
   margin: auto;
   z-index: 3;
   text-align: left;
   padding: 5px;
+  opacity: 0;
+  transition: 2s;
+}
+.active {
+  opacity: 1 !important;
+  transition: 2s;
 }
 .item-left {
   left: 0px;
@@ -45,9 +59,11 @@
   right: 0px;
   z-index: 2;
 }
-.btn {
-  top: 175px;
+.btn-reviews {
+  top: 190px;
   z-index: 3;
+  padding: 0px 6%;
+  cursor: pointer;
 }
 .btn-left {
   left: 0px;
