@@ -17,24 +17,26 @@ export default function App() {
       <h2 className="my-3 position-relative z-2">Отзывы наших клиентов</h2>
       <Container>
         <Col className="position-relative">
-          <div className="item item-left position-absolute">
-            <h4 className="text-center py-2">Дима</h4>
-            <div className="column-5">
-              <img className="star" src="./storage/img/star.png" />
-              <img className="star" src="./storage/img/star.png" />
-              <img className="star" src="./storage/img/star.png" />
-              <img className="star" src="./storage/img/star.png" />
-              <img className="star" src="./storage/img/star.png" />
+          <div className="item position-absolute">
+            <div className="">
+              <h4 className="text-center py-2">Дима</h4>
+              <div className="column-5">
+                <img className="star" src="./storage/img/star.png" />
+                <img className="star" src="./storage/img/star.png" />
+                <img className="star" src="./storage/img/star.png" />
+                <img className="star" src="./storage/img/star.png" />
+                <img className="star" src="./storage/img/star.png" />
+              </div>
+              {getText.txt}
             </div>
-            {getText.txt}
-          </div>
-          <div className="item item-center position-absolute  active">
-            <h4 className="text-center py-2">Дима</h4>
-            {getText.txt}
-          </div>
-          <div className="item item-right position-absolute">
-            <h4 className="text-center py-2">Дима</h4>
-            {getText.txt}
+            <div className=" active">
+              <h4 className="text-center py-2">Дима</h4>
+              {getText.txt}
+            </div>
+            <div className="">
+              <h4 className="text-center py-2">Дима</h4>
+              {getText.txt}
+            </div>
           </div>
         </Col>
       </Container>

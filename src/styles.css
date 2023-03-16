@@ -24,10 +24,11 @@
   z-index: 0;
 }
 .item {
+  columns: 3;
   top: 50px;
-  width: 32.5%;
+  width: 100%;
   margin: auto;
-  background-color: #fff;
+  z-index: 3;
   text-align: left;
   padding: 5px;
 }
