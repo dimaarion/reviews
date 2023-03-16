@@ -18,15 +18,22 @@ export default function App() {
       <Container>
         <Col className="position-relative">
           <div className="item item-left position-absolute">
-            <h3 className="text-center">Дима</h3>
+            <h4 className="text-center py-2">Дима</h4>
+            <div className="column-5">
+              <img className="star" src="./storage/img/star.png" />
+              <img className="star" src="./storage/img/star.png" />
+              <img className="star" src="./storage/img/star.png" />
+              <img className="star" src="./storage/img/star.png" />
+              <img className="star" src="./storage/img/star.png" />
+            </div>
             {getText.txt}
           </div>
           <div className="item item-center position-absolute  active">
-            <h3 className="text-center">Дима</h3>
+            <h4 className="text-center py-2">Дима</h4>
             {getText.txt}
           </div>
           <div className="item item-right position-absolute">
-            <h3 className="text-center">Дима</h3>
+            <h4 className="text-center py-2">Дима</h4>
             {getText.txt}
           </div>
         </Col>

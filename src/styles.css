@@ -2,6 +2,9 @@
   font-family: sans-serif;
   text-align: center;
 }
+.star {
+  width: 555%;
+}
 .reviews {
   background-color: rgba(1, 149, 65, 0.2);
   min-height: 400px;
