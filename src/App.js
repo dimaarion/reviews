@@ -1,4 +1,4 @@
-import "./bootstrap/bootstrap.css";
+
 import "./styles.css";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
@@ -36,14 +36,14 @@ export default function App() {
     }
     setLang(document.querySelector("html").lang)
     axios
-      .get("https://sandaniprim.md/reviews/")
+      .get("https://sandaniprim/reviews/")
       .then((response) => setText(sliceIntoChunks(response.data, countArr)));
   }, [load]);
 
   return (
     <Container
       fluid
-      className="App text-center "
+      className="text-center "
       onLoad={() => setLoad(load + 1)}
     >
       <h2 className="my-3 position-relative z-2  text-dark text-center fs-2 fw-bold text-uppercase">
