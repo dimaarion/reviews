@@ -1,4 +1,3 @@
-
 import "./styles.css";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
@@ -34,23 +33,25 @@ export default function App() {
     if (windowWidth.current < 1000) {
       countArr = 1;
     }
-    setLang(document.querySelector("html").lang)
+    setLang(document.querySelector("html").lang);
     axios
-      .get("https://sandaniprim/reviews/")
+      .get("https://sandaniprim.md/reviews/")
       .then((response) => setText(sliceIntoChunks(response.data, countArr)));
   }, [load]);
 
   return (
     <Container
       fluid
-      className="text-center "
+      className="text-center position-relative "
       onLoad={() => setLoad(load + 1)}
     >
-      <h2 className="my-3 position-relative z-2  text-dark text-center fs-2 fw-bold text-uppercase">
-        {lang === "ru"? "Отзывы наших клиентов":"Feedback de la clienții noștri"}
+      <h2 className="py-3 position-relative z-2  text-dark text-center fs-2 fw-bold text-uppercase">
+        {lang === "ru"
+          ? "Отзывы наших клиентов"
+          : "Feedback de la clienții noștri"}
       </h2>
 
-      <Container onResizeCapture={(e) => console.log(e)}>
+      <Container>
         <Col className="position-relative">
           {getText
             .sort((a, b) => a > b)
