@@ -37,7 +37,7 @@ export default function App() {
     axios
       .get("https://sandaniprim.md/reviews/")
       .then((response) => setText(sliceIntoChunks(response.data, countArr)));
-  }, [load]);
+  }, [setText]);
 
   return (
     <Container
