@@ -14,6 +14,8 @@ export default function App() {
 
   function sliceIntoChunks(arr, chunkSize) {
     const res = [];
+    arr = arr.filter((f)=>f.review_display === 1)
+   
     for (let i = 0; i < arr.length; i += chunkSize) {
       const chunk = arr.slice(i, i + chunkSize);
       res.push(chunk);
@@ -39,6 +41,9 @@ export default function App() {
       .then((response) => setText(sliceIntoChunks(response.data, countArr)));
   }, [setText]);
 
+  useEffect(()=>{
+   // console.log(getText)
+  },[getText])
   return (
     <Container
       fluid
@@ -48,7 +53,7 @@ export default function App() {
       <h2 className="py-3 position-relative z-2  text-dark text-center fs-2 fw-bold text-uppercase">
         {lang === "ru"
           ? "Отзывы наших клиентов"
-          : "Feedback de la clienții noștri"}
+          : "Recenziile clienților noștri"}
       </h2>
 
       <Container>
@@ -66,13 +71,13 @@ export default function App() {
               >
                 {items.length > 0
                   ? items.map((item, i) => (
-                      <Col key={item.name + i} className="bg-light mx-2 pb-2">
-                        <h4 className="text-center py-2">{item.name}</h4>
+                      <Col key={item.review_name + i} className="bg-light mx-2 pb-2">
+                        <h4 className="text-center py-2">{item.review_name}</h4>
                         <Row>
                           <Col>
                             <div className="raund">
                               {arrCount(5).map((raund) =>
-                                item.raund > raund ? (
+                                item.review_raund > raund ? (
                                   <img
                                     key={raund + "r"}
                                     className="star"
@@ -88,9 +93,9 @@ export default function App() {
                               )}
                             </div>
                           </Col>
-                          <Col className="text-end">{item.date}</Col>
+                          <Col className="text-end">{item.review_data}</Col>
                         </Row>
-                        {item.content}
+                        {item.review_content}
                       </Col>
                     ))
                   : ""}
