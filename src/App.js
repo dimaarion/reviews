@@ -81,13 +81,13 @@ export default function App() {
                                   <img
                                     key={raund + "r"}
                                     className="star"
-                                    src="./storage/img/starActive.png"
+                                    src="/storage/img/starActive.png"
                                   />
                                 ) : (
                                   <img
                                     key={raund + "r"}
                                     className="star"
-                                    src="./storage/img/star.png"
+                                    src="/storage/img/star.png"
                                   />
                                 )
                               )}
